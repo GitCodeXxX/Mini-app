@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet Mini App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 data-i18n="title">Dein Wallet</h1>
+  <p id="user"></p>
+
+  <div class="wallet">
+    <h2>TON</h2>
+    <p id="ton-address">UQClU3sQhZt65-lhH7fjvCkeIX686hItWtNE1pfWDXDpagQO</p>
+    <div id="ton-qr" class="qr"></div>
+  </div>
+
+  <div class="wallet">
+    <h2>Bitcoin</h2>
+    <p id="btc-address">1A9dtx4ykVUU7xBjBZWhmQfU8d8oeM8UGm</p>
+    <div id="btc-qr" class="qr"></div>
+  </div>
+
+  <div class="buttons">
+    <button data-i18n="send">Senden</button>
+    <button data-i18n="receive">Empfangen</button>
+  </div>
+
+  <select id="language">
+    <option value="de">Deutsch</option>
+    <option value="en">English</option>
+  </select>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
